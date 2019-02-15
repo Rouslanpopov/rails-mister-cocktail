@@ -1,4 +1,5 @@
 class DosesController < ApplicationController
+before_action :set_cocktail, only: [:destroy]
 
   def new
     @dose = Dose.new
@@ -19,9 +20,14 @@ class DosesController < ApplicationController
   end
 
   def destroy
+    @dose.destroy
   end
 
   private
+
+   def set_cocktail
+    @dose = Dose.find(params[:id])
+  end
 
   def dose_params
     params.require(:dose).permit(:description, :ingredient_id)

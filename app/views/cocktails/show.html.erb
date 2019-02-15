@@ -8,7 +8,7 @@
 </p>
 
 <% @cocktail.doses.each do |dose| %>
-  <p><%= dose.description %> -  <%= dose.ingredient.name %> <%= link_to "delete", cocktail_dose_path(dose),
+  <p><%= dose.description %> -  <%= dose.ingredient.name %> <%= link_to "delete", dose_path(@dose),
       method: :delete,
       data: { confirm: "Are you sure?" }, :class => "btn btn-danger" %></p>
 <% end %>
