@@ -13,3 +13,13 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+.container {
+  margin-top: 35px;
+}
+
+.banner {
+  background-image: url('https://www.thespruceeats.com/thmb/ZjD2LqeyP8aSsPSqE_oMbsKcWH8=/4500x3000/filters:no_upscale()/rsz_negroni-cocktail-recipe-759327-final-5bad10e0cff47e0026815b92.jpg');
+  height: calc(100vh - 35px) ;
+  background-size: cover;
+}

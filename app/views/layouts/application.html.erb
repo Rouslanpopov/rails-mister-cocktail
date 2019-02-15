@@ -12,7 +12,12 @@
   </head>
 
   <body>
+    <div class="navbar-fixed-top">
+      <%= render 'shared/navbar', :class => "navbar-fixed-top" %>
+    </div>
+    <div class="container">
     <%= yield %>
+    </div>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag "application" %>
   </body>
