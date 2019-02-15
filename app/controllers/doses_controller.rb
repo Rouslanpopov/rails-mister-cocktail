@@ -19,10 +19,10 @@ class DosesController < ApplicationController
   end
 
   def destroy
-
   end
 
   private
+
   def dose_params
     params.require(:dose).permit(:description, :ingredient_id)
   end
